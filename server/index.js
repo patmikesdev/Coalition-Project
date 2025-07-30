@@ -1,6 +1,18 @@
 const express = require('express');
+const cors = require('cors');
+require('dotenv').config();
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Configure CORS based on environment
+const corsOptions = {
+  origin: process.env.CLIENT_URL || '*',
+  credentials: true
+};
+
+// Enable CORS with configuration
+app.use(cors(corsOptions));
 
 // Middleware to parse JSON
 app.use(express.json());

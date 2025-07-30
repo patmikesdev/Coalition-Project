@@ -1,6 +1,8 @@
 # Logs
 *.log
 npm-debug.log*
+notes
+plan
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
