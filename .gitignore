@@ -2,7 +2,6 @@
 *.log
 npm-debug.log*
 notes
-plan
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
@@ -23,3 +22,11 @@ node_modules/
 
 # Mac Files
 .DS_Store
+
+# GitHub MCP wrapper (contains no secrets)
+.mcp.json
+# github-mcp.sh is safe to commit
+
+# Miscellaneous
+CLAUDE.md
+.claude/config.json

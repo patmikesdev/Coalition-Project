@@ -134,10 +134,123 @@ A full-stack web application using modern cloud services.
 
 ---
 
+## Phase 6: Project Transition - From Test to Production
+
+### Repository Transformation (August 18, 2025)
+- Transitioned from "Deployment-Test" to official "Coalition Project" repository
+- Renamed repository to "Coalition-Project" on GitHub
+- Updated project scope from deployment testing to full production application
+- Preserved all deployment configurations and infrastructure learnings
+
+### Project Charter Integration
+- Imported official project charter (`notes/charter.md`)
+- Charter defines comprehensive requirements for U.S. Campaign to End the Death Penalty website
+- Created Agile implementation plan (`plan/plan.md`) translating charter into:
+  - 5 development epics
+  - 4 milestone phases (11 weeks total)
+  - Sprint-based delivery approach
+
+### Project Documentation Structure
+- Added `CLAUDE.md` with project-specific instructions
+- Created `notes/` directory for project documentation:
+  - Charter requirements
+  - MongoDB guides
+  - Deployment guides
+  - Environment configuration best practices
+- Created `plan/` directory for Agile planning documents
+
+### MCP (Model Context Protocol) Integration
+- Configured MCP support for enhanced GitHub integration
+- Created `.mcp.json` configuration file
+- Added `github-mcp.sh` script for MCP server initialization
+- Enabled direct GitHub API access through Claude for:
+  - Issue creation and management
+  - Pull request operations
+  - Repository file operations
+  - Project board integration
+- This allows AI-assisted project management and code operations
+
+---
+
+## Phase 7: Agile Project Management Setup
+
+### GitHub Project Infrastructure (August 18, 2025)
+
+#### Issue Templates Created
+- Created `.github/ISSUE_TEMPLATE/` directory with:
+  - `feature_request.md` - User story template with acceptance criteria
+  - `bug_report.md` - Bug reporting with reproduction steps
+  - `task.md` - Technical/administrative tasks
+
+#### Project Epics (5 Total)
+Created comprehensive epics breaking down charter requirements:
+- **Epic #3**: Core Infrastructure - Responsive design, navigation, components, ADA compliance
+- **Epic #4**: Content Management - Homepage, About/Resources sections, blog functionality
+- **Epic #5**: Campaign Features - Interactive state map, campaign sections, detail pages
+- **Epic #6**: Action Network Integration - Email capture, donations, petitions, forms
+- **Epic #7**: Social Media & Analytics - Social feeds, GA4, Facebook Pixel, tracking
+
+#### Sprint 1 User Stories (21 Story Points)
+- **Issue #8**: Homepage Layout (5 points) - Content Management
+- **Issue #9**: State Map Component (8 points) - Campaign Features
+- **Issue #10**: Email Capture Pop-up (3 points) - Action Network Integration
+- **Issue #11**: Mobile Navigation (3 points) - Core Infrastructure
+- **Issue #12**: About Us Page (2 points) - Content Management
+
+#### Project Milestones
+Created 4 development phase milestones:
+1. **MVP Launch** - Due Sep 15, 2025 (4 weeks)
+2. **Content Integration** - Due Sep 29, 2025 (2 weeks)
+3. **Action Network Integration** - Due Oct 20, 2025 (3 weeks)
+4. **Polish & Launch** - Due Nov 3, 2025 (2 weeks)
+
+#### GitHub Project Board Configuration
+- Created Project Board #4: "Coalition Project Board"
+- Linked repository to project for automatic issue availability
+- Configured Status columns: Backlog, Ready, In Progress, Review, Done
+- Added custom fields:
+  - Story Points (Number field)
+  - Sprint (Single Select: Sprint 1-5)
+  - Epic (Single Select: All 5 epics)
+
+#### Project Automation
+- Configured built-in workflows for automatic status updates
+- Set up auto-add workflow for new issues
+- Repository linked for seamless issue management
+
+#### CLI Tools & Automation
+- Installed GitHub CLI (`gh`) for project management
+- Authenticated with project and repository scopes
+- Used `gh` commands to:
+  - Create milestones with due dates
+  - Add labels for priority, components, and sprints
+  - Set field values for all Sprint 1 items
+  - Configure project board programmatically
+
+#### Documentation
+- Created `CONTRIBUTING.md` with:
+  - Agile workflow (2-week sprints)
+  - Story point system (Fibonacci: 1,2,3,5,8)
+  - Definition of Done criteria
+  - Branch strategy (feature → main)
+  - Code standards and testing requirements
+
+---
+
 ## Current Status
+
+### Infrastructure (Proven & Ready)
 ✅ Full-stack application successfully deployed
-✅ Frontend: https://courageous-pixie-fb7609.netlify.app/
+✅ Frontend: https://8th-coalition-project.netlify.app/
 ✅ Backend: https://deployment-test-942h.onrender.com/
 ✅ Database: MongoDB Atlas cluster connected
 ✅ Auto-deploy enabled for both services
 ✅ Complete CRUD operations working with real database
+
+### Project Management (Fully Configured)
+✅ Transitioned from test project to Coalition Project production codebase
+✅ Project charter and requirements documented
+✅ Agile project management structure implemented
+✅ GitHub Project Board configured with 12 issues, 5 epics, 4 milestones
+✅ Sprint 1 ready to begin with 21 story points allocated
+✅ 11-week development timeline established (Aug 2025 - Nov 2025)
