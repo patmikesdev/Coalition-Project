@@ -1,2 +1,2 @@
-# Deployment-Test
-Practice project to walkthrough steps of deploying a full MERN stack app. 
+# Coalition Project
+Full-stack web application for the Coalition project. 

@@ -1,6 +1,19 @@
-This application is designed to be a learning exercise to gain practice in actually deploying a full stack application. 
-The architecture is split into two parts, 
-client/ = contains the front-end code built using vite and react (no typescript!)
-server/ = contains back-end server code built with express.js and mongoDB
+# Coalition Project
 
-It is important to maintain simplicity at all times. This team has never deployed an application together, and we are focusing solely on core fundamentals of deployment best practices. Do not worry about handling unlikely edge cases or maintaining any kind of backwards compatibility. 
+A full-stack web application for the Coalition.
+
+## Architecture
+- **Frontend**: React + Vite (no TypeScript) in `client/`
+- **Backend**: Express.js + MongoDB in `server/`
+- **Database**: MongoDB Atlas (database name: coalition-project)
+
+## Development Guidelines
+- Keep code simple and straightforward
+- Focus on core functionality 
+- Avoid unnecessary complexity
+- Edit existing files rather than creating new ones
+
+## Deployment
+- Frontend: Netlify
+- Backend: Render (https://deployment-test-942h.onrender.com)
+- Database: MongoDB Atlas cluster
